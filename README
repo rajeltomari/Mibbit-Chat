@@ -1,1 +1,39 @@
-To be updated later.
++--------------------------------------------------------
+| Nova Mibbit Chat Application
+|
+| Developer: Dustin Lennon
+| Email: demonicpagan@gmail.com
+|
+| This application is developed under the licenses
+| of Nova and CodeIgniter.
++--------------------------------------------------------
+
+The following application will add a Mibbit chat application to your Nova management system. To install this
+application you need to perform the following steps.
+
+1. Edit the contents of application/controllers/main.php editing the following variables. The file documents
+what these are.
+	*Line 52 - $nickname = 'ArcherGuest'.mt_rand(100,999);
+	*Line 56 - $widgetid = '03e4680ec2241a0e626034fe231f27d7';
+	*Lines 59-61
+
+2. Upload application/controllers/main.php to your application/controllers folder of your Nova install replacing 
+the existing one if you haven't already modified this file. If you already have changes in this file, it's best 
+that you just take the contents of this file and add it into your existing main.php file.
+
+3. Upload application/views/_base_override/main/pages/main_chat.php to your
+application/views/_base_override/main/pages folder of your Nova install.
+
+4. Log into your Nova management system and add a Chat menu item so your users can access your Mibbit chat page.
+You will use the link of main/chat when you create the menu item.
+
+If you experience any issues please submit a bug report on http://redmine.stelth2000inc.com/projects/nova-mibbit-chat.
+
+You can always get the latest SVN trunk from http://redmine.stelth2000inc.com/projects/nova-mibbit-chat as well.
+
+-------------------------------------
+Changelog - Dates are in Epoch time
+
+1244254514: Initial submission to SVN repository.
+
+1244254777: First development of application.
