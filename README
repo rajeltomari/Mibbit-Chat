@@ -21,10 +21,20 @@ what these are.
 the existing one if you haven't already modified this file. If you already have changes in this file, it's best 
 that you just take the contents of this file and add it into your existing main.php file.
 
-3. Upload application/views/_base_override/main/pages/main_chat.php to your
+3. Add the following line into your base_lang.php for your associated language(s) after the rest of the includes 
+and before the Global items.
+	/* include Mibbit Chat Language file */
+	include_once APPPATH .'language/'. $language . '/mibbit_chat_lang.php';
+
+4. Upload application/language/english/mibbit_chat_lang.php to your 
+application/views/language/english folder of your Nova install. Translate this page into other languages and upload
+them to the appropriate language directories. (If you would like your language included into a future release, 
+please contact me via email.)
+
+5. Upload application/views/_base_override/main/pages/main_chat.php to your
 application/views/_base_override/main/pages folder of your Nova install.
 
-4. Log into your Nova management system and add a Chat menu item so your users can access your Mibbit chat page.
+6. Log into your Nova management system and add a Chat menu item so your users can access your Mibbit chat page.
 You will use the link of main/chat when you create the menu item.
 
 If you experience any issues please submit a bug report on http://redmine.stelth2000inc.com/projects/nova-mibbit-chat.
@@ -33,6 +43,11 @@ You can always get the latest SVN trunk from http://redmine.stelth2000inc.com/pr
 
 -------------------------------------
 Changelog - Dates are in Epoch time
+
+1246910721: Added english language file.
+            Modified main.php to use language file.
+			Modified main_chat.php to use language file.
+			Modified README to provide information about language file.
 
 1244254514: Initial submission to SVN repository.
 

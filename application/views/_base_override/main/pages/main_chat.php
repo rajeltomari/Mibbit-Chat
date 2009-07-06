@@ -2,23 +2,23 @@
 
 <center>
 	<iframe src='<?php echo $uri; ?>' frameborder='0' style='height: 400px; width: 96%;'>
-		Your user agent does not support frames or is currently configured not to display frames.<br />
-		However, you may want to open the <a href='<?php echo $uri; ?>' target='_blank'>chat in a new browser window...</a>
+		<?php echo $mlabel['iframe']; ?>.<br />
+		<?php echo $mlabel['new_window1']; ?> <a href='<?php echo $uri; ?>' target='_blank'><?php echo $mlabel['new_window2']; ?>...</a>
 	</iframe>
 </center>
 <br />
-You can check out <a href='<?php echo $stats; ?>' target='_blank'>Our Channel's Stats Here</a>.<br />
-<font style='font-weight: bold;'>IRC Help</font><br />
-New to IRC? Here are some commands to get you started:
+<?php echo $mlabel['stats_begin']; ?> <a href='<?php echo $stats; ?>' target='_blank'><?php echo $mlabel['stats_end']; ?></a>.<br />
+<font style='font-weight: bold;'><?php echo $mlabel['irc_help']; ?></font><br />
+<?php echo $mlabel['irc_new']; ?>:
 <ul>
-	<li>/clear Clear the chat output in the channel</li>
-	<li>/nick [nick] Change your nickname</li>
-	<li>/query (or /msg) [nick] [msg] Open a PM to a user, with an optional message</li>
-	<li>/whois [nick] Find out all the manner of things about someone</li>
-	<li>/me [text] Emote</li>
-	<li>/away [msg] Set your status to away, with an optional message</li>
-	<li>/back Set your status to back</li>
+	<li>/clear <?php echo $mlabel['clear']; ?></li>
+	<li>/nick [nick] <?php echo $mlabel['nickname']; ?></li>
+	<li>/query (or /msg) [nick] [msg] <?php echo $mlabel['query']; ?></li>
+	<li>/whois [nick] <?php echo $mlabel['whois']; ?></li>
+	<li>/me [text] <?php echo $mlabel['emote']; ?></li>
+	<li>/away [msg] <?php echo $mlabel['away']; ?></li>
+	<li>/back <?php echo $mlabel['back']; ?></li>
 </ul>
 <br />
-If you plan on doing a lot of chatting with us, it'll be best to <a href='http://www.mirc.com/get.html'>click here</a>
-to Download a Real IRC Client.
+<?php echo $mlabel['real1']; ?> <a href='http://www.mirc.com/get.html'><?php echo $mlabel['click_here']; ?></a>
+<?php echo $mlabel['real2']; ?>.
