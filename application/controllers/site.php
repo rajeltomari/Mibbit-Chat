@@ -20,7 +20,13 @@ class Site extends Site_base {
 		parent::Site_base();
 	}
 	
-	/** your methods here **/
+	function chat()
+	{
+		/* check access */
+		$this->auth->check_access();
+
+		/* load the resources */
+	}
 }
 
 /* End of file site.php */
