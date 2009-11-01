@@ -52,3 +52,18 @@ Changelog - Dates are in Epoch time
 1244254514: Initial submission to SVN repository.
 
 1244254777: First development of application.
+
+1246918080: Added english language file
+			Modified main.php to use language file.
+			Modified main_chat.php to use language file.
+			Modified README to provide information about language file.
+			Included application/language/english directory and file to SVN
+
+1255440240: Adding admin backend to configure the mibbit chat.
+
+1255440420: Base file to add the admin backend for the mibbit chat.
+
+1255508940: Changed mind as to what section to put the administration under
+
+1255514880: Getting ready to add the admin interface for the Mibbit chat to nova.
+			Added modules and modules/settings_model.php
