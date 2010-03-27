@@ -37,15 +37,17 @@ and before the Global items.
 	/* include Mibbit Chat Language file */
 	include_once APPPATH .'language/'. $language . '/mibbit_chat_lang.php';
 
-4. Upload application/language/english/mibbit_chat_lang.php to your 
+4. Upload application/models/chat_model.php to your application/models folder of your Nova installation.
+
+5. Upload application/language/english/mibbit_chat_lang.php to your 
 application/views/language/english folder of your Nova install. Translate this page into other languages and upload
 them to the appropriate language directories. (If you would like your language included into a future release, 
 please contact me via email.)
 
-5. Upload application/views/_base_override/main/pages/main_chat.php to your
+6. Upload application/views/_base_override/main/pages/main_chat.php to your
 application/views/_base_override/main/pages folder of your Nova install.
 
-6. Log into your Nova management system and add a Chat menu item so your users can access your Mibbit chat page.
+7. Log into your Nova management system and add a Chat menu item so your users can access your Mibbit chat page.
 You will use the link of main/chat when you create the menu item.
 
 If you experience any issues please submit a bug report on http://redmine.stelth2000inc.com/projects/nova-mibbit-chat.
