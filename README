@@ -11,11 +11,22 @@
 The following application will add a Mibbit chat application to your Nova management system. To install this
 application you need to perform the following steps.
 
-1. Edit the contents of application/controllers/main.php editing the following variables. The file documents
-what these are.
-	*Line 52 - $nickname = 'ArcherGuest'.mt_rand(100,999);
-	*Line 56 - $widgetid = '03e4680ec2241a0e626034fe231f27d7';
-	*Lines 59-61
+1. a. Either use the included nova_mibbit.sql file to add the needed sql table to your nova installation. (preferred route)
+   b. Load up http://yoursite.com/index.php/install
+        * Select Add your own tables/fields to the database »
+		* Input your admin credentials
+		* Add database table: mibbit
+		* Rinse and repeat from inputting your admin credentials to add the following database fields:
+		    (order: Field name, Field type, Field constraint, Field default)
+			id int 9 0
+			server_address varchar 200 irc.kdfs.net
+			channel varchar 200 #Backroom
+			widgetid varchar 200 (blank - don't put anything in default field)
+			server_name varchar 200 KDFSnet
+			guest_prefix varchar 200 Guest
+			stats_page_url varchar 200 neo.us.kdfs.net
+			height int 3 600
+			width int 3 450
 
 2. Upload application/controllers/main.php to your application/controllers folder of your Nova install replacing 
 the existing one if you haven't already modified this file. If you already have changes in this file, it's best 
@@ -43,6 +54,11 @@ You can always get the latest SVN trunk from http://redmine.stelth2000inc.com/pr
 
 -------------------------------------
 Changelog - Dates are in Epoch time
+
+          : Modified README to reflect installation changes.
+			Modified main.php to make use of database table and the updated schema from last time this was worked on.
+			Added application/models/chat_model.php to handle database queries
+			Started work on admin page to modify chat settings.
 
 1246910721: Added english language file.
             Modified main.php to use language file.
