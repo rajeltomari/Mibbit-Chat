@@ -25,7 +25,10 @@ class Site extends Site_base {
 		/* check access */
 		$this->auth->check_access();
 
-		/* load the resources */
+		/* load chat model */
+		$this->load->model('chat_model', 'chat'); // rename $this->chat_model->method_name() to $this->chat->method_name()
+
+		$chat = $this->chat->get_all_settings();
 	}
 }
 
