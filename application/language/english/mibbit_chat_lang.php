@@ -63,3 +63,20 @@ $lang['mlabels_new_window1'] = 'However, you may want to open the';
 $lang['mlabels_new_window2'] = 'chat in a new browser window';
 
 $lang['mtitle'] = 'Chat';
+
+/*
+|---------------------------------------------------------------
+| MIBBIT CHAT ADMIN PAGE TEXT
+|---------------------------------------------------------------
+*/
+
+$lang['mibbit'] = 'Mibbit Chat';
+$lang['labels_mibbit'] = 'Mibbit IRC Chat';
+$lang['mserver_address'] = 'IRC Server Address';
+$lang['m_channels'] = 'Channel(s)<br /><small>Comma separated value of channels (i.e. #channel1,#channel2,#channel3)</small>';
+$lang['m_guest_pre'] = 'Guest prefix';
+$lang['m_height'] = 'Chat box height';
+$lang['mserver_name'] = 'IRC Server Name';
+$lang['mserver_stats_url'] = 'IRC Statistics URL';
+$lang['mserver_widget'] = 'Mibbit Widget ID';
+$lang['m_width'] = 'Chat box width';

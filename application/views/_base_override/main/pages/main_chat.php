@@ -7,7 +7,9 @@
 	</iframe>
 </center>
 <br />
+<?php if (isset($stats)): ?>
 <?php echo $mlabel['stats_begin']; ?> <a href='<?php echo $stats; ?>' target='_blank'><?php echo $mlabel['stats_end']; ?></a>.<br />
+<?php endif; ?>
 <font style='font-weight: bold;'><?php echo $mlabel['irc_help']; ?></font><br />
 <?php echo $mlabel['irc_new']; ?>:
 <ul>
