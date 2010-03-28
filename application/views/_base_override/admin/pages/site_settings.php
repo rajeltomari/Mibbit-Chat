@@ -7,12 +7,11 @@
 		<li><a href="#one"><span><?php echo $label['general'];?></span></a></li>
 		<li><a href="#two"><span><?php echo $label['system'];?></span></a></li>
 		<li><a href="#three"><span><?php echo $label['appearance'];?></span></a></li>
+		<li><a href="#five"><span><?php echo $label['mibbit'];?></span></a></li>
 
 		<?php if (isset($user)): ?>
 			<li><a href="#four"><span><?php echo $label['user'];?></span></a></li>
 		<?php endif; ?>
-
-		<li><a href="#mibbit"><span><?php echo $label['mibbit'];?></span></a></li>
 	</ul>
 
 	<div id="one">
@@ -213,26 +212,8 @@
 		<?php echo form_close();?>
 	</div>
 
-	<?php if (isset($user)): ?>
-		<div id="four">
-			<?php echo form_open('site/settings/3');?>
-				<?php echo text_output($label['header_user'], 'h2', 'page-subhead');?>
-
-				<?php foreach ($user as $u): ?>
-					<p>
-						<kbd><?php echo $u['label'];?></kbd>
-						<?php echo form_input($u['key'], $u['value']);?>
-					</p>
-				<?php endforeach; ?>
-
-				<br />
-				<p><?php echo form_button($button_submit);?></p>
-			<?php echo form_close();?>
-		</div>
-	<?php endif; ?>
-
-	<div id="mibbit">
-		<?php echo form_open('site/settings/4');?>
+	<div id="five">
+		<?php echo form_open('site/settings/3');?>
 			<?php echo text_output($label['header_chat'], 'h2', 'page-subhead');?>
 
 			<div class="indent-left">
@@ -274,4 +255,22 @@
 			<p><?php echo form_button($button_submit_mibbit);?></p>
 		<?php echo form_close();?>
 	</div>
+
+	<?php if (isset($user)): ?>
+		<div id="four">
+			<?php echo form_open('site/settings/4');?>
+				<?php echo text_output($label['header_user'], 'h2', 'page-subhead');?>
+
+				<?php foreach ($user as $u): ?>
+					<p>
+						<kbd><?php echo $u['label'];?></kbd>
+						<?php echo form_input($u['key'], $u['value']);?>
+					</p>
+				<?php endforeach; ?>
+
+				<br />
+				<p><?php echo form_button($button_submit);?></p>
+			<?php echo form_close();?>
+		</div>
+	<?php endif; ?>
 </div>

@@ -96,11 +96,13 @@ class Site extends Site_base {
 		/* mibbit submit button */
 		if (isset($_POST['submit-mibbit']))
 		{
+			$key_exceptions = array('submit', 'old_sim_type');
+
 			foreach ($_POST as $key => $value)
 			{
 				if (!in_array($key, $key_exceptions))
 				{
-					$update_array['setting_value'] = $this->input->xss_clean($value);
+					$update_array['mibbit_value'] = $this->input->xss_clean($value);
 
 					/* run the update query */
 					$update = $this->chat->update_setting($key, $update_array);
@@ -109,6 +111,18 @@ class Site extends Site_base {
 
 			if ($update > 0)
 			{
+				$new_type = $this->input->post('sim_type', TRUE);
+				$old_type = $this->input->post('old_sim_type', TRUE);
+
+				if ($new_type != $old_type)
+				{
+					$data_old = array('menu_display' => 'n');
+					$data_new = array('menu_display' => 'y');
+
+					$this->menu_model->update_menu_item($data_old, $old_type, 'menu_sim_type');
+					$this->menu_model->update_menu_item($data_new, $new_type, 'menu_sim_type');
+				}
+
 				$message = sprintf(
 					lang('flash_success_plural'),
 					ucfirst(lang('labels_site') .' '. lang('labels_settings')),

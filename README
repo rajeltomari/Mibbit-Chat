@@ -18,36 +18,37 @@ application you need to perform the following steps.
 		* Add database table: mibbit
 		* Rinse and repeat from inputting your admin credentials to add the following database fields:
 		    (order: Field name, Field type, Field constraint, Field default)
-			id int 9 0
-			server_address varchar 200 irc.kdfs.net
-			channel varchar 200 #Backroom
-			widgetid varchar 200 (blank - don't put anything in default field)
-			server_name varchar 200 KDFSnet
-			guest_prefix varchar 200 Guest
-			stats_page_url varchar 200 neo.us.kdfs.net
-			height int 3 600
-			width int 3 450
+			mibbit_id int 5 1
+			mibbit_key varchar 100 (blank - don't put anything in default field)
+			mibbit_value text (blank - don't put anything in default field)
 
 2. Upload application/controllers/main.php to your application/controllers folder of your Nova install replacing 
 the existing one if you haven't already modified this file. If you already have changes in this file, it's best 
 that you just take the contents of this file and add it into your existing main.php file.
 
-3. Add the following line into your base_lang.php for your associated language(s) after the rest of the includes 
+3. Upload application/controllers/site.php to your application/controllers folder of your Nova install replacing 
+the existing one if you haven't already modified this file. If you already have changes in this file, it's best 
+that you just take the contents of this file and add it into your existing site.php file.
+
+4. Add the following line into your base_lang.php for your associated language(s) after the rest of the includes 
 and before the Global items.
 	/* include Mibbit Chat Language file */
 	include_once APPPATH .'language/'. $language . '/mibbit_chat_lang.php';
-
-4. Upload application/models/chat_model.php to your application/models folder of your Nova installation.
 
 5. Upload application/language/english/mibbit_chat_lang.php to your 
 application/views/language/english folder of your Nova install. Translate this page into other languages and upload
 them to the appropriate language directories. (If you would like your language included into a future release, 
 please contact me via email.)
 
-6. Upload application/views/_base_override/main/pages/main_chat.php to your
+6. Upload application/models/chat_model.php to your application/models folder of your Nova installation.
+
+7. Upload application/views/_base_override/main/pages/main_chat.php to your
 application/views/_base_override/main/pages folder of your Nova install.
 
-7. Log into your Nova management system and add a Chat menu item so your users can access your Mibbit chat page.
+8. Upload application/views/_base_override/admin/pages/site_settings.php to your
+application/views/_base_override/admin/pages folder of your Nova install.
+
+9. Log into your Nova management system and add a Chat menu item so your users can access your Mibbit chat page.
 You will use the link of main/chat when you create the menu item.
 
 If you experience any issues please submit a bug report on http://redmine.stelth2000inc.com/projects/nova-mibbit-chat.
@@ -57,7 +58,10 @@ You can always get the latest SVN trunk from http://redmine.stelth2000inc.com/pr
 -------------------------------------
 Changelog - Dates are in Epoch time
 
-          : Modified README to reflect installation changes.
+1269781457: Made the final alterations on all files.
+			Admin interface completed and appears to be bug free.
+
+1269666000: Modified README to reflect installation changes.
 			Modified main.php to make use of database table and the updated schema from last time this was worked on.
 			Added application/models/chat_model.php to handle database queries
 			Started work on admin page to modify chat settings.
