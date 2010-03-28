@@ -51,9 +51,9 @@ application/views/_base_override/admin/pages folder of your Nova install.
 9. Log into your Nova management system and add a Chat menu item so your users can access your Mibbit chat page.
 You will use the link of main/chat when you create the menu item.
 
-If you experience any issues please submit a bug report on http://redmine.stelth2000inc.com/projects/nova-mibbit-chat.
+If you experience any issues please submit a bug report on http://github.com/demonicpagan/Nova-Mibbit-Chat-MOD/issues.
 
-You can always get the latest SVN trunk from http://redmine.stelth2000inc.com/projects/nova-mibbit-chat as well.
+You can always get the latest SVN trunk from http://github.com/demonicpagan/Nova-Mibbit-Chat-MOD as well.
 
 -------------------------------------
 Changelog - Dates are in Epoch time
