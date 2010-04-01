@@ -30,7 +30,7 @@ that you just take the contents of this file and add it into your existing main.
 the existing one if you haven't already modified this file. If you already have changes in this file, it's best 
 that you just take the contents of this file and add it into your existing site.php file.
 
-4. Add the following line into your base_lang.php for your associated language(s) after the rest of the includes 
+4. Add the following line into your app_lang.php for your associated language(s) after the rest of the includes 
 and before the Global items.
 	/* include Mibbit Chat Language file */
 	include_once APPPATH .'language/'. $language . '/mibbit_chat_lang.php';
