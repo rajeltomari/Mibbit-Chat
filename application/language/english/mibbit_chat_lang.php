@@ -3,7 +3,7 @@
 |---------------------------------------------------------------
 | LANGUAGE FILE - ENGLISH
 |---------------------------------------------------------------
-| File: application/language/english/app_lang.php
+| File: application/language/english/mibbit_chat_lang.php
 | System Version: 1.0
 |
 | English language file for the system. Punctuation constants are
@@ -44,7 +44,7 @@
 */
 
 $lang['mlabels_stats_begin'] = 'You can check out';
-$lang['mlabels_stats_end'] = 'Our Channel\'s Stats Here';
+$lang['mlabels_stats_end'] = 'Our Channel'.RSQUO.'s Stats Here';
 $lang['mlabels_help'] = 'IRC Help';
 $lang['mlabels_new'] = 'New to IRC? Here are some commands to get you started';
 $lang['mlabels_clear'] = 'Clear the chat output in the channel';
@@ -54,7 +54,7 @@ $lang['mlabels_whois'] = 'Find out all the manner of things about someone';
 $lang['mlabels_emote'] = 'Emote';
 $lang['mlabels_away'] = 'Set your status to away, with an optional message';
 $lang['mlabels_back'] = 'Set your status to back';
-$lang['mlabels_real1'] = 'If you plan on doing a lot of chatting with us, it\'ll be best to';
+$lang['mlabels_real1'] = 'If you plan on doing a lot of chatting with us, it'.RSQUO.'ll be best to';
 $lang['mlabels_click'] = 'click here';
 $lang['mlabels_real2'] = 'to Download a Real IRC Client';
 
