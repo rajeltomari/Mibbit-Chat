@@ -58,6 +58,8 @@ You can always get the latest source from http://github.com/demonicpagan/Nova-Mi
 -------------------------------------
 Changelog - Dates are in Epoch time
 
+1271467132: Updated the SQL file. Had one too many fields in the INSERT statement.
+
 1269781457: Made the final alterations on all files.
 			Admin interface completed and appears to be bug free.
 

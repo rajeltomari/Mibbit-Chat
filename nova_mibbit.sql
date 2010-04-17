@@ -36,7 +36,7 @@ CREATE TABLE IF NOT EXISTS `nova_mibbit` (
 -- Dumping data for table `nova_mibbit`
 --
 
-INSERT INTO `nova_mibbit` (`mibbit_id`, `mibbit_key`, `mibbit_value`, `mibbit_label`) VALUES
+INSERT INTO `nova_mibbit` (`mibbit_id`, `mibbit_key`, `mibbit_value`) VALUES
 (1, 'server_address', 'fresh.eu.kdfs.net'),
 (2, 'channel', '#Backroom'),
 (3, 'widgetid', ''),
