@@ -43,7 +43,7 @@ You can always get the latest source from http://github.com/demonicpagan/Nova-Mi
 Changelog - Dates are in Epoch time
 
 1271970692: Changed how you configure the plugin removing the need to add a database table and alter the admin page.
-			Configuration of this MOD is done through a config file now.
+			Configuration of this MOD is done through a config file now. (Suggested by Anodyne Productions)
 
 1271763038: Updated README to add what to do in case RSS External Feeds MOD is currently installed.
 
