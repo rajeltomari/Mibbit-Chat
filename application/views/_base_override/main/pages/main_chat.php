@@ -1,7 +1,7 @@
 <?php echo text_output($header, 'h1', 'page_head'); ?>
 
 <center>
-	<iframe src='<?php echo $uri; ?>' frameborder='0' style='height: 400px; width: 96%;'>
+	<iframe src='<?php echo $uri; ?>' frameborder='0' style='height: <?php echo $height;?>; width: <?php echo $width;?>;'>
 		<?php echo $mlabel['iframe']; ?>.<br />
 		<?php echo $mlabel['new_window1']; ?> <a href='<?php echo $uri; ?>' target='_blank'><?php echo $mlabel['new_window2']; ?>...</a>
 	</iframe>
