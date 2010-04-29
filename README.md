@@ -20,7 +20,7 @@ that you just take the contents of this file and add it into your existing main.
 3. Add the following line into your app_lang.php for your associated language(s) after the rest of the includes 
 and before the Global items.
 
-	`/* include Mibbit Chat Language file */`
+	`/* include Mibbit Chat Language file */`<br />
 	`include_once APPPATH .'language/'. $language . '/mibbit_chat_lang.php';`
 
 4. Upload application/language/english/mibbit_chat_lang.php to your 
