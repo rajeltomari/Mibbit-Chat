@@ -41,43 +41,57 @@ You can always get the latest source from <http://github.com/demonicpagan/Nova-M
 
 Changelog - Dates are in Epoch time
 -----------------------------------
-1272511286: Created a more readable README for GitHub.
+1272511286:<br />
+* Created a more readable README for GitHub.
 
-1271970692: Changed how you configure the plugin removing the need to add a database table and alter the admin page.
-Configuration of this MOD is done through a config file now. (Suggested by Anodyne Productions)
+1271970692:<br />
+* Changed how you configure the plugin removing the need to add a database table and alter the admin page.
+* Configuration of this MOD is done through a config file now. (Suggested by Anodyne Productions)
 
-1271763038: Updated README to add what to do in case RSS External Feeds MOD is currently installed.
+1271763038:<br />
+* Updated README to add what to do in case RSS External Feeds MOD is currently installed.
 
-1269985580: Updated README to reflect the proper URLs for issue reporting and viewing the project.
+1269985580:<br />
+* Updated README to reflect the proper URLs for issue reporting and viewing the project.
 
-1269781457: Made the final alterations on all files.
-Admin interface completed and appears to be bug free.
+1269781457:<br />
+* Made the final alterations on all files.
+* Admin interface completed and appears to be bug free.
 
-1269666000: Modified README to reflect installation changes.
-Modified main.php to make use of database table and the updated schema from last time this was worked on.
-Added application/models/chat_model.php to handle database queries
-Started work on admin page to modify chat settings.
+1269666000:<br />
+* Modified README to reflect installation changes.
+* Modified main.php to make use of database table and the updated schema from last time this was worked on.
+* Added application/models/chat_model.php to handle database queries
+* Started work on admin page to modify chat settings.
 
-1246910721: Added english language file.
-Modified main.php to use language file.
-Modified main_chat.php to use language file.
-Modified README to provide information about language file.
+1246910721:<br />
+* Added english language file.
+* Modified main.php to use language file.
+* Modified main_chat.php to use language file.
+* Modified README to provide information about language file.
 
-1244254514: Initial submission to SVN repository.
+1244254514:<br />
+* Initial submission to SVN repository.
 
-1244254777: First development of application.
+1244254777:<br />
+* First development of application.
 
-1246918080: Added english language file
-Modified main.php to use language file.
-Modified main_chat.php to use language file.
-Modified README to provide information about language file.
-Included application/language/english directory and file to SVN
+1246918080:<br />
+* Added english language file
+* Modified main.php to use language file.
+* Modified main_chat.php to use language file.
+* Modified README to provide information about language file.
+* Included application/language/english directory and file to SVN
 
-1255440240: Adding admin backend to configure the mibbit chat.
+1255440240:<br />
+* Adding admin backend to configure the mibbit chat.
 
-1255440420: Base file to add the admin backend for the mibbit chat.
+1255440420:<br />
+* Base file to add the admin backend for the mibbit chat.
 
-1255508940: Changed mind as to what section to put the administration under
+1255508940:<br />
+* Changed mind as to what section to put the administration under
 
-1255514880: Getting ready to add the admin interface for the Mibbit chat to nova.
-Added modules and modules/settings_model.php
+1255514880:<br />
+* Getting ready to add the admin interface for the Mibbit chat to nova.
+* Added modules and modules/settings_model.php
