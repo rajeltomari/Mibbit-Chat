@@ -43,34 +43,34 @@ Changelog - Dates are in Epoch time
 1272511286: Created a more readable README for GitHub.
 
 1271970692: Changed how you configure the plugin removing the need to add a database table and alter the admin page.
-	Configuration of this MOD is done through a config file now. (Suggested by Anodyne Productions)
+Configuration of this MOD is done through a config file now. (Suggested by Anodyne Productions)
 
 1271763038: Updated README to add what to do in case RSS External Feeds MOD is currently installed.
 
 1269985580: Updated README to reflect the proper URLs for issue reporting and viewing the project.
 
 1269781457: Made the final alterations on all files.
-	Admin interface completed and appears to be bug free.
+Admin interface completed and appears to be bug free.
 
 1269666000: Modified README to reflect installation changes.
-	Modified main.php to make use of database table and the updated schema from last time this was worked on.
-	Added application/models/chat_model.php to handle database queries
-	Started work on admin page to modify chat settings.
+Modified main.php to make use of database table and the updated schema from last time this was worked on.
+Added application/models/chat_model.php to handle database queries
+Started work on admin page to modify chat settings.
 
 1246910721: Added english language file.
-	Modified main.php to use language file.
-	Modified main_chat.php to use language file.
-	Modified README to provide information about language file.
+Modified main.php to use language file.
+Modified main_chat.php to use language file.
+Modified README to provide information about language file.
 
 1244254514: Initial submission to SVN repository.
 
 1244254777: First development of application.
 
 1246918080: Added english language file
-	Modified main.php to use language file.
-	Modified main_chat.php to use language file.
-	Modified README to provide information about language file.
-	Included application/language/english directory and file to SVN
+Modified main.php to use language file.
+Modified main_chat.php to use language file.
+Modified README to provide information about language file.
+Included application/language/english directory and file to SVN
 
 1255440240: Adding admin backend to configure the mibbit chat.
 
@@ -79,4 +79,4 @@ Changelog - Dates are in Epoch time
 1255508940: Changed mind as to what section to put the administration under
 
 1255514880: Getting ready to add the admin interface for the Mibbit chat to nova.
-	Added modules and modules/settings_model.php
+Added modules and modules/settings_model.php
