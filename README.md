@@ -1,7 +1,7 @@
 Nova Mibbit Chat Application
 ============================
-Developer: Dustin Lennon
-Email: demonicpagan@gmail.com
+Developer: Dustin Lennon<br />
+Email: <demonicpagan@gmail.com>
 
 This application is developed under the licenses of Nova and CodeIgniter.
 
@@ -35,9 +35,9 @@ application/views/_base_override/main/pages folder of your Nova install.
 You will use the link of main/chat when you create the menu item.
 
 If you experience any issues please submit a bug report on 
-http://github.com/demonicpagan/Nova-Mibbit-Chat-MOD/issues.
+<http://github.com/demonicpagan/Nova-Mibbit-Chat-MOD/issues>.
 
-You can always get the latest source from http://github.com/demonicpagan/Nova-Mibbit-Chat-MOD as well.
+You can always get the latest source from <http://github.com/demonicpagan/Nova-Mibbit-Chat-MOD> as well.
 
 Changelog - Dates are in Epoch time
 -----------------------------------
