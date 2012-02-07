@@ -21,7 +21,7 @@ that you just take the contents of this file and add it into your existing main.
 and before the Global items.
 
 	`/* include Mibbit Chat Language file */`<br />
-	`include_once APPPATH.'language/'.$language.'/mibbit_chat_lang.php';`
+	`include_once APPPATH .'language/'. $language . '/mibbit_chat_lang.php';`
 
 4. Upload application/language/english/mibbit_chat_lang.php to your 
 application/views/language/english folder of your Nova install. Translate this page into other languages and upload
@@ -41,10 +41,6 @@ You can always get the latest source from <http://github.com/demonicpagan/Nova-M
 
 Changelog - Dates are in Epoch time
 -----------------------------------
-1328648872:
-
-*	Updated MOD to be compatible with coding standards of Nova 2.0.1
-
 1272511286:
 
 *	Created a more readable README for GitHub.

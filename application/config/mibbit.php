@@ -8,7 +8,6 @@
 | chat page on your Nova installation.
 |
 */
-
 $config['guest_prefix'] = "Guest";
 $config['channel'] = "#Backroom";
 $config['server_address'] = "fresh.eu.kdfs.net";

@@ -1,12 +1,23 @@
-<?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+<?php
+/*
+|---------------------------------------------------------------
+| MAIN CONTROLLER
+|---------------------------------------------------------------
+|
+| File: controllers/main.php
+| System Version: 1.0
+|
+| Controller that handles the MAIN section of the system.
+|
+*/
 
-require_once MODPATH.'core/controllers/nova_main.php';
+require_once APPPATH . 'controllers/base/main_base.php';
 
-class Main extends Nova_main {
-
-	public function __construct()
+class Main extends Main_base {
+	
+	function Main()
 	{
-		parent::__construct();
+		parent::Main_base();
 	}
 
 	function chat()
@@ -75,14 +86,15 @@ class Main extends Nova_main {
 			'new_window2' => $this->lang->line('mlabels_new_window2'),
 		);
 
-		$this->_regions['content'] = Location::view('main_chat', $this->skin, 'main', $data);
-		$this->_regions['title'] .= $this->lang->line('mtitle');
+		// Get view file page location
+		$view_loc = view_location('main_chat', $this->skin, 'main');
 
 		// Write data to the template
-		Template::assign($this->_regions);
+		$this->template->write('title', $this->lang->line('mtitle'));
+		$this->template->write_view('content', $view_loc, $data);
 
 		// Render the template
-		Template::render();
+		$this->template->render();
 	}
 
 	function _is_valid_nickname($nickname = '')
