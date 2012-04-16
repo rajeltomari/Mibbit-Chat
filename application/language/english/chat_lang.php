@@ -43,8 +43,6 @@
 |---------------------------------------------------------------
 */
 
-$lang['mlabels_stats_begin'] = "You can check out";
-$lang['mlabels_stats_end'] = "Our Channel".RSQUO."s Stats Here";
 $lang['mlabels_help'] = "IRC Help";
 $lang['mlabels_new'] = "New to IRC? Here are some commands to get you started";
 $lang['mlabels_clear'] = "Clear the chat output in the channel";
@@ -77,6 +75,5 @@ $lang['m_channels'] = "Channel(s)<br /><small>Comma separated value of channels 
 $lang['m_guest_pre'] = "Guest prefix";
 $lang['m_height'] = "Chat box height";
 $lang['mserver_name'] = "IRC Server Name";
-$lang['mserver_stats_url'] = "IRC Statistics URL";
 $lang['mserver_widget'] = "Mibbit Widget ID";
 $lang['m_width'] = "Chat box width";
