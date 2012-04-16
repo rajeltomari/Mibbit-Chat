@@ -9,14 +9,13 @@
 |
 */
 
-$config['guest_prefix'] = "Guest";
+$config['guest_prefix'] = "Mib_Guest";
 $config['channel'] = "#Backroom";
-$config['server_address'] = "fresh.eu.kdfs.net";
-$config['widgetid'] = "03e4680ec2241a0e626034fe231f27d7";
+$config['server_address'] = "irc.kdfs.net";
+$config['widgetid'] = "93d00c937e07097d7d9bebb427bc9910";
 $config['server_name'] = "KDFSnet";
-$config['stats_page_url'] = "http://neo.us.kdfs.net";
 $config['height'] = "400px";
 $config['width'] = "96%";
 
-/* End of file mibbit.php */
-/* Location: ./application/config/mibbit.php */
+/* End of file chat.php */
+/* Location: ./application/config/chat.php */
