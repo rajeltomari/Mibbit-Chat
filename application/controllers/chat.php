@@ -1,15 +1,19 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-require_once MODPATH.'core/controllers/nova_main.php';
+require_once MODPATH.'core/libraries/Nova_controller_main.php';
 
-class Main extends Nova_main {
+class Chat extends Nova_controller_main {
 
 	public function __construct()
 	{
 		parent::__construct();
+		$this->_regions['nav_sub'] = Menu::build('sub', 'main');
 	}
-
-	function chat()
+	
+	/**
+	 * Put your own methods below this...
+	 */
+	function index()
 	{
 		// Adds Mibbit chat to main
 		$this->config->load('mibbit',TRUE);
@@ -73,15 +77,16 @@ class Main extends Nova_main {
 			'iframe' => $this->lang->line('mlabels_iframe'),
 			'new_window1' => $this->lang->line('mlabels_new_window1'),
 			'new_window2' => $this->lang->line('mlabels_new_window2'),
+			'sim_name' => $this->lang->line('mlabels_sim_name'),
 		);
 
-		$this->_regions['content'] = Location::view('main_chat', $this->skin, 'main', $data);
-		$this->_regions['title'] .= $this->lang->line('mtitle');
+		$data['header'] = $this->options['sim_name'] . "'s Mibbit " . $this->lang->line('mtitle');
 
-		// Write data to the template
+		$this->_regions['content'] = Location::view('chat_index', $this->skin, 'chat', $data);
+		$this->_regions['title'].= $data['header'];
+		
 		Template::assign($this->_regions);
-
-		// Render the template
+		
 		Template::render();
 	}
 
@@ -98,6 +103,3 @@ class Main extends Nova_main {
 		}
 	}
 }
-
-/* End of file main.php */
-/* Location: ./application/controllers/main.php */
